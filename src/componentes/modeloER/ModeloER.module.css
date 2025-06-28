@@ -1,0 +1,71 @@
+/* Fondo general */
+.container {
+  min-height: 100vh;
+  background-color: #2b3235;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Tarjeta */
+.card {
+  background-color: #3a4245;
+  color: #fff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0px 0px 8px #EE445F;
+  text-align: center;
+}
+
+/* Título */
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #EE445F;
+  margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* Imagen */
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: #ffffff 2px solid;
+  box-shadow: 0px 0px 5px #ffffff;
+}
+
+/* Texto */
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.ieText{
+    color: #EE445F;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
