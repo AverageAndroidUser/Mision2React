@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Barra></Barra>
         <Routes>
+          <Route path="/" element={<Navigate to="/Home" />} /> {/*El Navigate redirecciona cuando la URL esta vacia "/" hacia "/Home" */}
           <Route path = "/Home" element = {<Home></Home>}></Route>
           <Route path = "/ModeloER" element = {<ModeloER></ModeloER>}></Route>
           <Route path = "/Pruebas" element = {<Pruebas></Pruebas>}></Route>
