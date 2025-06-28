@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.card}>
         <h1 className={styles.title}>IEGresos</h1>
-        <h3 className={styles.subtitle}>By. Juan Diego Ascanio</h3>
+        <h3 className={styles.subtitle}>Por. Juan Diego Ascanio M.</h3>
         <Link to="/ModeloER" className={styles.button}>Ver Más</Link>
       </div>
       <Outlet />

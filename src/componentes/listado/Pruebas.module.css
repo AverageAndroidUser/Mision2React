@@ -1,0 +1,39 @@
+.container {
+  min-height: 100vh;
+
+  background-color: #3a4245;
+  box-shadow: 0px 0px 8px #EE445F;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+
+.title {
+  color: #EE445F;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.info{
+    text-align: left;
+    margin-top: 50px;
+}
+
+.srt{
+    color: #EE445F;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .container{
+        margin-top: 50px;
+    }
+}

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Tarjeta } from "./Tarjeta/Tarjeta";
-import { ModalPrueba } from "./Tarjeta/Modal";
+import { Tarjeta } from "./Tarjeta/Ta/Tarjeta";
+import { ModalPrueba } from "./Tarjeta/Mo/Modal";
+import styles from "./Pruebas.module.css";
 
-export default function Pruebas(){
+export default function Pruebas() {
   const [mostrarModal, setMostrarModal] = useState(false);
   const [pruebaActual, setPruebaActual] = useState(null);
 
@@ -33,13 +34,14 @@ export default function Pruebas(){
       Descripcion: "Se elimina el registro con el ID 21 de la tabla Usuario."
     }
   ];
+
   return (
-    <div className="container py-4 px-3">
-      <h2 className="text-center">IEGresos</h2>
-      <h3 className="text-center">Pruebas</h3>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div className={styles.container}>
+      <h2 className={styles.title}>IEGresos</h2>
+      <h3 className={styles.subtitle}>Pruebas</h3>
+      <div className={`row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4`}>
         {listaPruebas.map((i, index) => (
-          <div key={index}>
+          <div key={index} className="col">
             <Tarjeta titulo={i.Titulo} imagen={i.Imagen} verMas={() => abrirModal(i)} />
           </div>
         ))}
@@ -53,6 +55,16 @@ export default function Pruebas(){
           imagen={pruebaActual.Imagen}
         />
       )}
+      <div className={styles.info}>
+        <h4>Información de Despliegue</h4>
+        <p>
+          <strong className={styles.srt}>Hostname:</strong> dpg-d1dh9h7diees73culmcg-a.http://oregon-postgres.render.com/
+        </p>
+        <p>
+          <strong className={styles.srt}>Password:</strong> 3G3vIe2hTxARjDwd4S72bJnEDeGglaqY
+        </p>
+      </div>
     </div>
-  )
+  );
 }
+
