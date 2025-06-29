@@ -18,7 +18,7 @@ export default function Barra() {
             <div className={style.iconWrapper}>
               <img src='https://res.cloudinary.com/dpuixn4lq/image/upload/v1751125866/diagrama-de-flujo_gn0fjj.png' alt='modeloER' className = {style.icon}></img>  
             </div>
-            <span className={style.tooltip}>MoedeloER</span>
+            <span className={style.tooltip}>ModeloER</span>
           </Link>
         </li>
         <li className={style.item}>
