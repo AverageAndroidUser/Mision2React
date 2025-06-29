@@ -6,7 +6,7 @@ export default function Barra() {
     <nav className = {style.barra}>
       <ul className = {style.menu}>
         <li className={style.item}>
-          <Link to="/Home" className={style.link}>
+          <Link to="/Home" className={style.link}> {/*Retorna en base a lo que se definio en las Routes del App */}
             <div className={style.iconWrapper}>
               <img src='https://res.cloudinary.com/dpuixn4lq/image/upload/v1751125866/casa_n8nmio.png' alt='home' className = {style.icon}></img>
             </div>

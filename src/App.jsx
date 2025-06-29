@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Barra></Barra>
         <Routes>
+          <Route path = "/" element = {<Home></Home>}></Route> {/*Establece lo que retorna cada ruta*/}
           <Route path = "/Home" element = {<Home></Home>}></Route>
           <Route path = "/ModeloER" element = {<ModeloER></ModeloER>}></Route>
           <Route path = "/Pruebas" element = {<Pruebas></Pruebas>}></Route>
